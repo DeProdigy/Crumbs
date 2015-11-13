@@ -2,6 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'Get all Posts', type: :request do
   context 'when Posts exist' do
+
+    # 4 seeded + 2 newly created
+
     before do
       post1 = Post.create(image_url: 'google.com', latitude: '30.000', longitude: '-50.000')
       post2 = Post.create(image_url: 'yahoo.com', latitude: '40.000', longitude: '-40.000')
@@ -11,12 +14,16 @@ RSpec.describe 'Get all Posts', type: :request do
       get '/posts'
       posts = JSON.parse(response.body)
 
-      expect(posts.length).to eql 2
+      expect(posts.length).to eql 6
       expect(response.status).to eql 200
     end
   end
 
   context 'when Posts do not exist' do
+    before do
+      Post.destroy_all
+    end
+
     it 'responds with an empty array' do
       get '/posts'
 
