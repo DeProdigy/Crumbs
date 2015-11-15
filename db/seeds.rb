@@ -15,7 +15,7 @@ user2 = User.create(username: 'Daniel')
 Post.create(user_id: user1.id, title: 'Sweet Green', image_url: 'http://sweetgreen.com/content/uploads/2013/04/img-home-slide-d.jpg', latitude: '40.7157648', longitude: '-73.959351')
 Post.create(user_id: user1.id, title: 'Dos Torros', image_url: 'http://newyork.seriouseats.com/images/20100112-dostoros-quesadilla-innards.jpg', latitude: '40.7176045', longitude: '-73.9580386')
 Post.create(user_id: user1.id, title: 'Blah', image_url: 'http://maaclink.org/wp-content/uploads/2014/03/home.jpg', latitude: '40.6008149', longitude: '-73.9873753')
-Post.create(user_id: user1.id, title: 'Tea', image_url: 'http://weknowyourdreams.com/image.php?pic=/images/tea/tea-07.jpg', latitude: '40.5877486', longitude: '-73.9556395')
+Post.create(user_id: user1.id, title: 'Tea', image_url: 'http://weknowyourdreams.com/image.php?pic=/images/tea/tea-07.jpg', latitude: '40.5878086', longitude: '-73.9551126')
 
 
 Post.create(user_id: user2.id, title: 'Coffee', image_url: 'http://1.bp.blogspot.com/-AGdMdfvtPbQ/Vae-YAhtnVI/AAAAAAAAFRg/OPKwgGBVzTA/s1600/coffee-and-breakfast1.png', latitude: '40.7136643', longitude: '-73.9658318')
