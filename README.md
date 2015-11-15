@@ -14,6 +14,7 @@ Already pre-seeded in the DB
 		{
 		 	'id' => 41,
       		'username' => 'Alex',
+			'title' => 'Starbucks',
 	   		'image_url' => 'something.com/abcdefghijk',
 	   		'latitude' => '30.63784',
       		'longitude' => '-58.92023',
@@ -23,6 +24,7 @@ Already pre-seeded in the DB
     	{
 		 	'id' => 42,
       		'username' => 'Daniel',
+			'title' => 'DD',
 	   		'image_url' => 'something.com/abcdefghijk',
 	   		'latitude' => '30.63784',
       		'longitude' => '-58.92023',
@@ -42,6 +44,7 @@ Already pre-seeded in the DB
 	{
       post => {
         user_id => 'user-id',
+        title => 'Some title',
         image_url => 'something.com/abcdefghijk',
         latitude => '30.63784',
         longitude => '-58.92023'
@@ -55,6 +58,7 @@ Already pre-seeded in the DB
 	{
 		'id' => 3,
 		'image_url' => 'something.com/abcdefghijk',
+		'title' => 'Some title',
 		'latitude' => '30.63784',
 		'longitude' => '-58.92023',
 		'user_id' => '7' 

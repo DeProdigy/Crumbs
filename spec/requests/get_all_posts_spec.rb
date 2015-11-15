@@ -14,7 +14,7 @@ RSpec.describe 'Get all Posts', type: :request do
       get '/posts'
       posts = JSON.parse(response.body)
 
-      expect(posts.length).to eql 6
+      expect(posts.length).to eql 8
       expect(response.status).to eql 200
     end
   end

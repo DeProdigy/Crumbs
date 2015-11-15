@@ -15,7 +15,7 @@ function initializeMap(crumbs) {
           return {
             "lat": crumb.latitude,
             "lng": crumb.longitude,
-            "infowindow": "<img class='info-image' src=" + crumb.image_url + " alt='Marker info' position= 'absolute' height='100%' width='100%'>"
+            "infowindow": crumb.title + "<img class='info-image' src=" + crumb.image_url + " alt='Marker info' position= 'absolute' height='100%' width='100%'>"
           }
         })
       );
