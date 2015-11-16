@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  $.get( "/posts", function( data ) {
+  $.get( "/api/v1/posts", function( data ) {
     initializeMap(data);
   });
 });

@@ -1,10 +1,13 @@
 # Crumbs
 
-## Users
+## V1
+
+###### Base Url: [https://crumbs-app.herokuapp.com/api/v1](https://crumbs-app.herokuapp.com/api/v1)
+### Users
 
 Already pre-seeded in the DB
 
-## Posts
+### Posts
 ######To get all the posts:
 * make a `GET` to '/posts'
 * if any posts exist, the response will be an array of user objects each with a posts property:
