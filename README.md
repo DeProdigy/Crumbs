@@ -32,7 +32,7 @@ Already pre-seeded in the DB
 	   		'latitude' => '30.63784',
       		'longitude' => '-58.92023',
 	   		'updated_at' => '2015-10-06T20:02:25.061Z',
-	   		'created_at' => '2015-10-06T20:02:25.061Z'
+			'created_at' => '2015-10-06T20:02:25.061Z'
 		}
 	]
 ```
@@ -64,7 +64,9 @@ Already pre-seeded in the DB
 		'title' => 'Some title',
 		'latitude' => '30.63784',
 		'longitude' => '-58.92023',
-		'user_id' => '7' 
+		'user_id' => '7',
+		'updated_at' => '2015-10-06T20:02:25.061Z',
+	   	'created_at' => '2015-10-06T20:02:25.061Z'
 	}
 ```
 *  if not created, expect an `error` with a message

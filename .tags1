@@ -4,3 +4,9 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+Api	/Users/Hint/projects/Crumbs/app/controllers/api/v1/posts_controller.rb	/^module Api$/;"	module	line:1
+V1	/Users/Hint/projects/Crumbs/app/controllers/api/v1/posts_controller.rb	/^  module V1$/;"	module	line:2	class:Api
+PostsController	/Users/Hint/projects/Crumbs/app/controllers/api/v1/posts_controller.rb	/^    class PostsController < ApplicationController$/;"	class	line:3	class:Api.V1
+index	/Users/Hint/projects/Crumbs/app/controllers/api/v1/posts_controller.rb	/^      def index$/;"	method	line:4	class:Api.V1.PostsController
+create	/Users/Hint/projects/Crumbs/app/controllers/api/v1/posts_controller.rb	/^      def create$/;"	method	line:9	class:Api.V1.PostsController
+post_params	/Users/Hint/projects/Crumbs/app/controllers/api/v1/posts_controller.rb	/^        def post_params$/;"	method	line:27	class:Api.V1.PostsController
