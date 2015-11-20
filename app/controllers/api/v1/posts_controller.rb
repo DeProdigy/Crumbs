@@ -2,8 +2,8 @@ module Api
   module V1
     class PostsController < ApplicationController
       def index
-        posts = Post.last(20)
-        render json: posts
+        posts = Post.includes(:user).last(20)
+        render json: posts, each_serializer: PostSerializer, root: false
       end
 
       def create
