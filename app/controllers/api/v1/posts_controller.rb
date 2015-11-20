@@ -2,8 +2,10 @@ module Api
   module V1
     class PostsController < ApplicationController
       def index
-         posts = Post.all
-         render json: posts
+        # binding.pry
+        # most recent 20 places
+        posts = Post.all
+        render json: posts
       end
 
       def create
