@@ -4,7 +4,7 @@ RSpec.describe 'Post create', type: :request do
   context 'with good params' do
     let(:user) { Api::V1::User.create(username: 'someone') }
     let(:post_params) {
-      { user_id: user.id, title: 'brush', image_url: 'google.com', latitude: '30.000', longitude: '-50.000'}
+      { user_id: user.id, title: 'brush', image_url: 'google.com', latitude: 30.000, longitude: -50.000}
     }
 
     it 'creates a Post' do
@@ -16,7 +16,7 @@ RSpec.describe 'Post create', type: :request do
 
   context 'with bad post params' do
     let(:user) { Api::V1::User.create(username: 'someone') }
-    let(:post_params) { { user_id: user.id, image_url: '' } }
+    let(:post_params) { { user_id: user.id } }
     let(:api_response) { JSON.parse(response.body) }
 
     let(:expected_error) do
@@ -24,8 +24,6 @@ RSpec.describe 'Post create', type: :request do
         "error" =>
           {
             "image_url" => ["can't be blank"],
-            "latitude"=>["can't be blank"],
-            "longitude"=>["can't be blank"],
             "title"=>["can't be blank"]
           }
       }

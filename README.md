@@ -19,8 +19,8 @@ Already pre-seeded in the DB
       		'username' => 'Alex',
 			'title' => 'Starbucks',
 	   		'image_url' => 'something.com/abcdefghijk',
-	   		'latitude' => '30.63784',
-      		'longitude' => '-58.92023',
+	   		'latitude' => 30.63784,
+      		'longitude' => -58.92023,
 	   		'updated_at' => '2015-10-06T20:02:25.061Z',
 	   		'created_at' => '2015-10-06T20:02:25.061Z'
 		},
@@ -29,8 +29,8 @@ Already pre-seeded in the DB
       		'username' => 'Daniel',
 			'title' => 'DD',
 	   		'image_url' => 'something.com/abcdefghijk',
-	   		'latitude' => '30.63784',
-      		'longitude' => '-58.92023',
+	   		'latitude' => 30.63784,
+      		'longitude' => -58.92023,
 	   		'updated_at' => '2015-10-06T20:02:25.061Z',
 			'created_at' => '2015-10-06T20:02:25.061Z'
 		}
@@ -49,8 +49,8 @@ Already pre-seeded in the DB
         user_id => 'user-id',
         title => 'Some title',
         image_url => 'something.com/abcdefghijk',
-        latitude => '30.63784',
-        longitude => '-58.92023'
+        latitude => 30.63784,
+        longitude => -58.92023
       }
     }
 ```
@@ -62,8 +62,8 @@ Already pre-seeded in the DB
 		'id' => 3,
 		'image_url' => 'something.com/abcdefghijk',
 		'title' => 'Some title',
-		'latitude' => '30.63784',
-		'longitude' => '-58.92023',
+		'latitude' => 30.63784,
+		'longitude' => -58.92023,
 		'user_id' => '7',
 		'updated_at' => '2015-10-06T20:02:25.061Z',
 	   	'created_at' => '2015-10-06T20:02:25.061Z'

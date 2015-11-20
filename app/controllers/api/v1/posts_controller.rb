@@ -2,9 +2,7 @@ module Api
   module V1
     class PostsController < ApplicationController
       def index
-        # binding.pry
-        # most recent 20 places
-        posts = Post.all
+        posts = Post.last(20)
         render json: posts
       end
 

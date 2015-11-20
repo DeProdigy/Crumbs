@@ -20,7 +20,6 @@ module Api
       end
 
       private
-
         attr_reader :venue_data
 
         def user
@@ -33,7 +32,7 @@ module Api
         end
 
         def title
-          venue_data.categories.first.name
+          venue_data.name
         end
 
         def latitude
