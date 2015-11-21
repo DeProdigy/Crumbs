@@ -2,6 +2,8 @@ module Api
   module V1
     class FoursquareSeeder
       def initialize(args)
+        @sw = args[:sw]
+        @ne = args[:ne]
         @client_id = args[:client_id]
         @client_secret = args[:client_secret]
         @api_version = args[:api_version]
@@ -14,7 +16,7 @@ module Api
 
 
       private
-        attr_reader :client_id, :client_secret, :api_version, :current_location
+        attr_reader :client_id, :client_secret, :api_version, :current_location, :sw, :ne
 
         def client
           Foursquare2::Client.new(
@@ -26,6 +28,7 @@ module Api
 
         def venues
           client.search_venues(ll: current_location).venues
+          # client.search_venues(sw: sw, ne: ne).venues
         end
 
         def venue_info(venue_id)
