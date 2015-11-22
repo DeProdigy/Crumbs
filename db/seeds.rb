@@ -26,9 +26,14 @@ user2 = Api::V1::User.create(username: 'Daniel')
 # Foursquare seeder around soho = > aws
 
 current_location = '40.5878335,-73.9558048'
-sw = '40.582029,-73.9613616'
-ne = '40.5927159,-73.9464251'
 
+# Sheeps
+# sw = '40.582029,-73.9613616'
+# ne = '40.5927159,-73.9464251'
+
+# Daniel's house
+sw = '40.5953742,-73.9665199'
+ne = '40.619716,-73.946209'
 
 Api::V1::FoursquareSeeder.new(
   client_id: ENV['FOURSQUARE_CLIENT_ID'],

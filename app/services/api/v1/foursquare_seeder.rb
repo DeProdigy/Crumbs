@@ -27,8 +27,8 @@ module Api
         end
 
         def venues
-          client.search_venues(ll: current_location).venues
-          # client.search_venues(sw: sw, ne: ne).venues
+          # client.search_venues(ll: current_location).venues
+          client.search_venues(intent: 'browse', sw: sw, ne: ne).venues
         end
 
         def venue_info(venue_id)
